@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+}
+
+html {
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(30, 0, 255, 1) 16%, rgba(0, 191, 255, 1) 51%, rgba(0, 25, 255, 1) 93%);
+    background-attachment: fixed;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link,
+nav p,
+.perfil-usuario,
+.datos-variados,
+footer {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 1rem;
+    border: 0.16rem solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link,
+nav p,
+.perfil-usuario,
+.datos-variados {
+    padding: 1.5rem 1rem;
+}
+
+.perfil-usuario .nombre {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-top: 0.8rem;
+}
+
+.perfil-usuario .usuario {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #666666;
+    margin-bottom: 0.5rem;
+}
+
+
+.perfil-usuario .fecha {
+    font-size: 0.85rem;
+    color: #777777;
+    margin-bottom: 1rem;
+}
+
+
+.perfil-usuario .liga {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #cd7f32;
+}
+
+.perfil-usuario .xp {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #007bff;
+}
+
+footer {
+    padding: 0.4rem 1rem;
+}
+
+.link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.8rem 2.2rem 0 rgba(0, 0, 0, 0.25);
+}
+
+img {
+    width: 25%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.perfil-usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.datos-variados {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-contraseñas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.contenedor-contraseñas label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 0.9rem;
+    width: 80%;
+}
+
+.contenedor-contraseñas input {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.95rem;
+    border-radius: 1rem;
+    border: 0.16rem solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.15);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.contenedor-contraseñas input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+    cursor: auto;
+}
+
+.contenedor-idioma {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #2c3e50;
+}
+
+.contenedor-idioma select {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.95rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    width: 80%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.contenedor-botones {
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+}
+.btn-guardar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.9rem 1.2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-guardar:hover {
+    background-color: #0056b3;
+}
+
+.btn-cerrar-sesion {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.9rem 1.2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-cerrar-sesion:hover {
+    background-color: #a71d2a;
+}
+.datos-variados .email{
+    font-size: 1.3rem;
+}
+
+
+

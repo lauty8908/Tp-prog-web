@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+}
+
+html {
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(30, 0, 255, 1) 16%, rgba(0, 191, 255, 1) 51%, rgba(0, 25, 255, 1) 93%);
+    background-attachment: fixed;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sub,
+.contenedor-ingles,
+.contenedor-aleman,
+.contenedor-chino,
+.contenedor-progreso,
+.link,
+header p,
+footer {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 1rem;
+    border: 0.16rem solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sub,
+.contenedor-ingles,
+.contenedor-aleman,
+.contenedor-chino,
+.contenedor-progreso,
+.link,
+header p {
+    padding: 1.5rem 1rem;
+}
+
+.sub,
+.contenedor-ingles,
+.contenedor-aleman,
+.contenedor-chino,
+.contenedor-progreso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.contenedor-ingles:hover,
+.contenedor-aleman:hover,
+.contenedor-chino:hover,
+.contenedor-progreso:hover,
+.link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.8rem 2.2rem 0 rgba(0, 0, 0, 0.25);
+}
+
+.contenedor div p,
+.contenedor div h3 {
+    color: #1e293b;
+}
+
+.contenedor div a {
+    color: #0284c7;
+}
+
+footer {
+    padding: 0.4rem 1rem;
+    margin-top: 1rem;
+}

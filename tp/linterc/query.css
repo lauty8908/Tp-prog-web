@@ -1,0 +1,118 @@
+@media screen and (max-width: 48em) {
+    body {
+        width: 94%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    nav .link {
+        padding: 0.6em 1em;
+        font-size: 0.95rem;
+    }
+
+    nav p {
+        width: 100%;
+        text-align: center;
+        margin-top: 0.25rem;
+    }
+
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "contenedor-v"
+            "contenedor-pregunta"
+            "contenedor-palabra"
+            "contenedor-comprobar";
+        gap: 1.25rem;
+        min-height: auto;
+    }
+
+    .contenedor-pregunta,
+    .contenedor-palabra {
+        line-height: 2.2rem;
+    }
+
+    .input-resp {
+        margin-top: 1.5rem;
+        width: 100%;
+    }
+
+    .btn-comprobar {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 30em) {
+    body {
+        width: 96%;
+        padding-bottom: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    nav a,
+    nav p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedor-v {
+        flex-direction: column;
+        padding-top: 2.5rem;
+        gap: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .btn-cerrar {
+        top: 0.8rem;
+        left: 0.8rem;
+    }
+
+    .barra-progreso {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .barra-progreso progress {
+        width: 70%;
+    }
+
+    .contenedor-v,
+    .contenedor-pregunta,
+    .contenedor-palabra,
+    .contenedor-comprobar {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .contenedor-pregunta h2,
+    .contenedor-palabra h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .contenedor-palabra p {
+        font-size: 0.95rem;
+        line-height: 2rem;
+        word-spacing: 0.15rem;
+        text-align: center;
+    }
+
+    .input-resp,
+    .btn-comprobar {
+        width: 100%;
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+    }
+}

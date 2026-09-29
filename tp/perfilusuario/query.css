@@ -1,0 +1,86 @@
+@media screen and (max-width: 48em) {
+    body {
+        width: 90%;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    nav .link {
+        padding: 0.6em 0.8em;
+        font-size: 0.9rem;
+    }
+
+    nav p {
+        width: 100%;
+        text-align: center;
+        margin-top: 0.25rem;
+    }
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1.25rem;
+    }
+
+    img {
+        width: 5rem;
+        height: 5rem;
+    }
+    .contenedor-contraseñas label,
+    .contenedor-idioma select {
+        width: 100%;
+    }
+    .perfil-usuario {
+        padding: 1.5rem 0.8rem;
+    }
+
+    .perfil-usuario .nombre {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    body {
+        width: 95%;
+        padding-bottom: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    nav a,
+    nav p {
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .perfil-usuario,
+    .datos-variados {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .datos-variados .email {
+        font-size: 1rem;
+    }
+
+    .contenedor-botones {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.6rem;
+    }
+
+    .btn-guardar,
+    .btn-cerrar-sesion {
+        width: 100%;
+        text-align: center;
+    }
+}

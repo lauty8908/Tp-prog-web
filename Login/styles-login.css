@@ -8,7 +8,7 @@
 
 html {
     min-height: 100vh;
-    background: linear-gradient(90deg, rgba(30,0,255,1) 16%, rgba(0,191,255,1) 51%, rgba(0,25,255,1) 93%);
+    background: linear-gradient(90deg, rgba(30, 0, 255, 1) 16%, rgba(0, 191, 255, 1) 51%, rgba(0, 25, 255, 1) 93%);
     background-attachment: fixed;
     font-family: "Nunito", sans-serif;
 }
@@ -20,6 +20,7 @@ body {
     align-items: center;
     padding: 1.5rem 1rem;
 }
+
 .contenedor {
     background: rgba(255, 255, 255, 0.85);
     border-radius: 1rem;
@@ -46,7 +47,7 @@ form {
     width: 100%;
 }
 
-.usuario label, 
+.usuario label,
 .contraseña label,
 .cont11 label {
     display: block;
@@ -87,5 +88,29 @@ a {
 }
 
 a:hover {
+    color: #0369a1;
+}
+
+button {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #0284c7;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: inherit;
+    transition: color 0.2s ease;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 1rem;
+    border: 0.16rem solid rgba(255, 255, 255, 0.4);
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+button:hover {
     color: #0369a1;
 }

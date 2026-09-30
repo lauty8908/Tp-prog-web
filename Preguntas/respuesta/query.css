@@ -1,0 +1,112 @@
+@media screen and (max-width: 48em) {
+    body {
+        width: 92%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    nav .link {
+        padding: 0.6em 1em;
+        font-size: 0.95rem;
+    }
+
+    nav p {
+        width: 100%;
+        text-align: center;
+        margin-top: 0.25rem;
+    }
+
+    .aprobado {
+        padding: 1.5rem 1rem;
+    }
+
+    .aprobado h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-continuar {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 30em) {
+    body {
+        width: 96%;
+        padding-bottom: 1rem;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    nav h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    nav a.link,
+    nav p {
+        width: 100%;
+        text-align: center;
+        padding: 0.6rem 0.8rem;
+    }
+    .contenedor-v {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+
+    .btn-cerrar {
+        align-self: flex-start;
+    }
+
+    .barra-progreso {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+
+    .barra-progreso progress {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contenedor-v p {
+        align-self: flex-start;
+        font-size: 0.9rem;
+    }
+    .icono {
+        font-size: 2.5rem;
+    }
+
+    .aprobado {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .aprobado h2 {
+        font-size: 1.25rem;
+    }
+
+    .respuesta {
+        padding: 0.8rem 1rem;
+    }
+
+    .respuesta .correcto {
+        font-size: 0.95rem;
+    }
+
+    .btn-continuar {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+}

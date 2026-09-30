@@ -1,0 +1,84 @@
+@media screen and (max-width: 48em) {
+    body {
+        padding: 1rem 0.75rem;
+    }
+
+    .contenedor-login,
+    .contenedor-contraseña,
+    .contenedor-contra-olvidada,
+    .contenedor-exito-contraseña,
+    .contenedor-registro {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0.85rem;
+    }
+
+    .contenedor {
+        padding: 1.2rem 1rem;
+    }
+
+    form {
+        gap: 1rem;
+    }
+
+    .usuario {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.35rem;
+        width: 100%;
+    }
+
+    .cont11 label,
+    .usuario label {
+        min-width: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    input {
+        width: 100%;
+        height: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    body {
+        padding: 0.8rem 0.5rem;
+    }
+
+    .contenedor {
+        padding: 1rem 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p, label, a {
+        font-size: 0.9rem;
+    }
+
+    input {
+        height: 2.2rem;
+        font-size: 0.9rem;
+        padding: 0.4rem 0.75rem;
+    }
+
+    .cont4 a, 
+    .cont5 a, 
+    .cont9 a, 
+    .cont10 a, 
+    .cont12 a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0.4rem 0;
+    }
+}

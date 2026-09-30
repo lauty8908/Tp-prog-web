@@ -1,0 +1,24 @@
+.contenedor-resultado {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "contenedor-v"
+        "aprobado"
+        "contenedor-comprobar";
+    width: 100%;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.aprobado {
+    grid-area: aprobado;
+}
+
+.contenedor-v {
+    grid-area: contenedor-v;
+}
+
+.contenedor-comprobar {
+    grid-area: contenedor-comprobar;
+}

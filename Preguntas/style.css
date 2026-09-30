@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+html {
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(30, 0, 255, 1) 16%, rgba(0, 191, 255, 1) 51%, rgba(0, 25, 255, 1) 93%);
+    background-attachment: fixed;
+}
+
+body {
+    width: 80%;
+    max-width: 60rem;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+}
+h1, h2, h3 {
+    color: #1e293b;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+p {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #475569;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #0284c7;
+    font-weight: 700;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #0369a1;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.3rem;
+}
+
+.contenedor {
+    min-height: 70vh;
+}
+
+.link,
+nav p,
+.contenedor-v,
+.contenedor-pregunta,
+.contenedor-palabra,
+.contenedor-comprobar,
+footer {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 1rem;
+    border: 0.16rem solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.15);
+}
+
+.link,
+nav p {
+    padding: 0.8rem 1.2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.8rem 2.2rem 0 rgba(0, 0, 0, 0.25);
+}
+
+footer {
+    padding: 0.6rem 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.contenedor-v {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+.contenedor-pregunta,
+.contenedor-palabra,
+.contenedor-comprobar {
+    padding: 1.5rem 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contenedor-pregunta,
+.contenedor-palabra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2.5rem;
+}
+
+.contenedor-pregunta p {
+    font-size: 1.15rem;
+    font-style: italic;
+    color: #1e293b;
+}
+
+.contenedor-comprobar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-cerrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.9);
+    color: #1e293b;
+    font-size: 1.1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.barra-progreso {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.barra-progreso progress {
+    width: 100%;
+    max-width: 15rem;
+}
+
+.input-resp {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 25rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.8rem;
+    border: 0.12rem solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.input-resp:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-comprobar {
+    text-align: center;
+    width: 100%;
+    max-width: 20rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0.8rem;
+    background: #007bff;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-comprobar:hover {
+    background-color: #0056b3;
+}
+
+.btn-comprobar:active,
+.btn-cerrar:active {
+    transform: translateY(0.15rem);
+}

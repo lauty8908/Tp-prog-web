@@ -4,22 +4,20 @@ body {
     grid-template-rows: auto 1fr auto;
     gap: 1rem;
 }
-
 .contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "  sub                 sub               sub "
-                            "contenedor-ingles contenedor-aleman contenedor-progreso "
-                            "contenedor-ingles contenedor-chino contenedor-progreso";
+    grid-template-areas:
+        "sub                sub                sub"
+        "contenedor-ingles  contenedor-aleman  contenedor-progreso"
+        "contenedor-ingles  contenedor-chino   contenedor-progreso";
     align-items: stretch;
     width: 100%;
-    gap: 1.5rem;
-
+    gap: 1.25rem;
 }
-
 .sub {
-    grid-area: sub ;
+    grid-area: sub;
 }
 
 .contenedor-ingles {
@@ -30,7 +28,7 @@ body {
     grid-area: contenedor-aleman;
 }
 
-.contenedor-chino{
+.contenedor-chino {
     grid-area: contenedor-chino;
 }
 

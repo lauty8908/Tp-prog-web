@@ -5,14 +5,16 @@
 
     nav {
         flex-wrap: wrap;
-        gap: 0.75rem;
+        justify-content: center;
+        gap: 0.5rem;
     }
 
     nav .link {
         padding: 0.6em 0.8em;
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
-    header p {
+
+    nav p {
         width: 100%;
         text-align: center;
         margin-top: 0.25rem;
@@ -22,13 +24,12 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         grid-template-areas:
-            "sub sub"
-            "contenedor-ingles contenedor-aleman"
-            "contenedor-chino contenedor-progreso";
+            "sub                sub"
+            "contenedor-ingles  contenedor-aleman"
+            "contenedor-chino   contenedor-progreso";
         gap: 1.25rem;
     }
 }
-
 @media screen and (max-width: 30em) {
     body {
         width: 95%;
@@ -42,7 +43,7 @@
     }
 
     nav a,
-    header p {
+    nav p {
         width: 100%;
         text-align: center;
     }
@@ -64,7 +65,7 @@
     .contenedor-chino,
     .contenedor-progreso,
     .link,
-    header p {
-        padding: 1rem 0.75rem;
+    nav p {
+        padding: 1.2rem 0.8rem;
     }
 }

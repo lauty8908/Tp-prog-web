@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="query.css">
     <title>Registro</title>
 </head>
+
 <body>
     <main>
         <section class="contenedor-registro">
@@ -21,7 +23,7 @@
                 <p>Aprende Inglés, Alemán y Chino gratis y de forma divertida</p>
             </div>
             <div class="contenedor cont11">
-                <form action="">
+                <form action="login.html">
                     <div class="usuario">
                         <label for="usuario">Usuario:</label>
                         <input type="text" id="usuario" name="usuario" required>
@@ -33,7 +35,7 @@
                     </div>
                     <div class="usuario">
                         <label for="telefono">Teléfono:</label>
-                        <input type="tel" id="telefono" name="telefono" required>
+                        <input type="text" id="telefono" name="telefono" pattern="[0-9]{10}" required>
                     </div>
 
                     <div class="usuario">
@@ -44,12 +46,11 @@
                         <label for="contraseña">Confirmar contraseña:</label>
                         <input type="password" id="password" name="password" required>
                     </div>
+                        <button type="submit">Iniciar Sesión</button>
                 </form>
-            </div>
-            <div class="contenedor cont12">
-                <a href="../EleccionCurso/index.html">Iniciar Sesión</a>
             </div>
         </section>
     </main>
 </body>
+
 </html>

@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 1rem;
+}
+
+.contenedor-tienda {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "cabecera-tienda"
+        "resumen"
+        "seccion-tienda"
+        "seccion-rachas";
+    gap: 1.2rem;
+    width: 100%;
+    align-items: stretch;
+}
+
+.cabecera-tienda {
+    grid-area: cabecera-tienda;
+}
+
+.resumen {
+    grid-area: resumen;
+}
+
+.seccion-tienda {
+    grid-area: seccion-tienda;
+}
+
+.seccion-rachas {
+    grid-area: seccion-rachas;
+}

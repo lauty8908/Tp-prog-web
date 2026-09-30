@@ -20,8 +20,8 @@
         margin-top: 0.25rem;
     }
 
-    .lista-lecciones {
-        grid-template-columns: 1fr;
+    .racha-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 @media screen and (max-width: 30em) {
@@ -49,19 +49,27 @@
         padding: 0.6rem 0.8rem;
     }
 
-    .titulo-curso,
-    .unidad,
-    .leccion {
-        padding: 1rem 0.75rem;
+    .cabecera-tienda,
+    .tarjeta-resumen,
+    .seccion-tienda,
+    .seccion-rachas,
+    .producto {
+        padding: 1rem 0.8rem;
     }
 
-    .lista-lecciones {
-        grid-template-columns: 1fr;
-        gap: 0.8rem;
+    .racha-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
     }
 
-    .btn-iniciar {
+    .dia {
+        padding: 0.8rem 0.3rem;
+        font-size: 0.85rem;
+    }
+
+    button {
         width: 100%;
         padding: 0.75rem 1rem;
+        font-size: 0.9rem;
     }
 }

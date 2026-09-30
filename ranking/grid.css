@@ -1,0 +1,30 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 1rem;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "titulo-ranking"
+        "selector-liga"
+        "lista-ranking";
+    gap: 1rem;
+    width: 100%;
+    align-items: stretch;
+}
+
+.titulo-ranking {
+    grid-area: titulo-ranking;
+}
+
+.selector-liga {
+    grid-area: selector-liga;
+}
+
+.lista-ranking {
+    grid-area: lista-ranking;
+}

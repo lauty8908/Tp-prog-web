@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
+html{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    background: #1e00ff;
+    background: linear-gradient(90deg, rgba(30,0,255,1) 16%, rgba(0,191,255,1)51%,rgba(0,25,255,1)93%);
+    background-attachment: fixed;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 1rem;
+    border: 0.16rem solid rgba(255, 255, 255, 0.4);
+    padding: 1.5rem 1rem;
+    box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/*GRID login principal*/
+
+.contenedor-login{
+
+    width: 40vw;
+    height: 40rem;
+    margin: 0.5rem;
+    gap: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    text-align: center;
+}
+
+.cont1{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.cont2{
+    grid-column: 1/4;
+    grid-row: 2/4;
+}
+
+.cont3{
+    grid-column: 1/4;
+    grid-row: 4/6;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 0.4rem;
+}
+
+.usuario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.usuario label, .contraseña label {
+    min-width: 9rem;
+    text-align: left;
+}
+
+input{
+    height: 1.5rem;
+    width: 15.5rem;
+    border-radius: 0.5rem;
+}
+
+.cont4{
+    grid-column: 1/4;
+    grid-row: 6/7;
+}
+
+a{
+    text-decoration: none;
+}
+
+.cont5{
+    grid-column: 1/4;
+    grid-row: 7/8;
+}
+
+/* GRID CONTRASEÑA */
+
+.contenedor-contraseña{
+
+    width: 40vw;
+    height: 30rem;
+    margin: 0.5rem;
+    gap: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    text-align: center;
+}
+
+.cont6{
+    grid-column: 1/4;
+    grid-row: 2/3;   
+}
+
+.cont7{
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+.cont8{
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+
+.cont9{
+    grid-column: 1/4;
+    grid-row: 5/6;
+}
+
+/*GRID EMAIL OLVIDADO */
+
+.contenedor-contra-olvidada{
+    width: 40vw;
+    height: 25rem;
+    margin: 0.5rem;
+    gap: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    text-align: center;
+}
+
+
+.cont10{
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+
+
+/*GRID EMAIL Y TELEFONO VALIDO */
+
+.contenedor-exito-contraseña{
+    width: 40vw;
+    height: 30rem;
+    margin: 0.5rem;
+    gap: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    text-align: center;
+}
+
+/*GRID REGISTRO*/
+
+.contenedor-registro{
+    width: 40vw;
+    height: 45rem;
+    margin: 0.5rem;
+    gap: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    text-align: center;
+}
+
+.cont11{
+    grid-column: 1/4;
+    grid-row: 4/8;
+}
+
+.cont12{
+    grid-column: 1/4;
+    grid-row: 8/9;
+}
+
+.cont11 label {
+    display: inline-block;
+    min-width: 11.25rem;
+    text-align: left;
+}
+
+/*Media Queries LOGIN*/
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .contenedor-login,
+  .contenedor-contraseña,
+  .contenedor-contra-olvidada,
+  .contenedor-exito-contraseña,
+  .contenedor-registro {
+    width: 80vw;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .usuario {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+}
+
+/* Celulares */
+@media (max-width: 767px) {
+  .contenedor-login,
+  .contenedor-contraseña,
+  .contenedor-contra-olvidada,
+  .contenedor-exito-contraseña,
+  .contenedor-registro {
+    width: 95vw;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  h2, p, label {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .usuario {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .cont4 a, 
+  .cont5 a, 
+  .cont9 a, 
+  .cont10 a, 
+  .cont12 a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
+
+
